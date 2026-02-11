@@ -10,14 +10,14 @@ class Animal{
 
         $this->age = $age;
         $this->nom = $nom;
-        echo "L'âge de l'animal " . $this->age . " an\n";
-        echo "# Age de l'animal après appel de la methode viellir\n";
+        echo "L'âge de l'animal " . $this->age . " an" . "<br><br>";
+        echo "# Age de l'animal après appel de la methode viellir" . "<br><br>";
     }
 
     function vieillir($newage){
 
         $this->age = $newage;
-        echo "L'âge de l'animal est de " . $this->age + 1 . " an\n\n ";
+        echo "L'âge de l'animal est de " . $this->age + 1 . " an " . "<br><br>";
 
 
 
@@ -26,7 +26,7 @@ class Animal{
     function nommer($nouveaunom){
 
         $this->nom = $nouveaunom;
-        echo "L'animal se nomme " . $this->nom . " \n\n ";
+        echo "L'animal se nomme " . $this->nom . "<br><br>";
 
 
     }
