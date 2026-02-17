@@ -23,7 +23,7 @@ class Personne{
 
 class Eleve extends Personne{
     function allerEnCours(){
-        return "Je vais en cours";
+        return "Je vais en cours <br><br>";
     }
 
     function afficherAge(){
@@ -41,22 +41,22 @@ class Professeur extends Eleve{
     }
 
     function enseigner(){
-        return "Le cours va commencer";
+        return "Le cours va commencer <br><br>";
     }
 }
 
 $personne = new Personne();
 $personne->modifierAge(15);
-echo $personne->bonjour();
+echo "Personne : " . $personne->bonjour();
 
  
 $eleve = new Eleve();
-echo $eleve->afficherAge();
+echo "Élève : " . $eleve->afficherAge();
 echo $eleve->allerEnCours();
 
 
 $prof = new Professeur("Anglais");
-echo $prof->bonjour();
+echo "Professeur : " . $prof->bonjour();
 echo $prof->allerEnCours();
 
 
